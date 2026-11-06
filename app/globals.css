@@ -1,27 +1,48 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-    themes: emerald --default
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "atomic";
+    default: true;
+    color-scheme: dark;
+    --color-base-100: #1B1433; /* page background */
+    --color-base-200: #2A2150; /* cards and panels */
+    --color-base-300: #5A4B8A; /* borders */
+    --color-base-content: #F2EEFF; /* main text */
+    --color-primary: #9B5DE5; /* progress bar and primary */
+    --color-secondary: #2DD4E8; /* links and years */
+    --color-accent: #F15BB5; /* highlights and hovers */
+    --color-error: #FF746C;
+    --radius-box: 0; 
+    --radius-field: 0;
+    --border: 2px;
+}
+
+@theme {
+    --color-line: #5A4B8A;
+    --color-muted: #B8ADD9;
+    --color-lcd: #B8F400;
+}
+
+html, body {
+    background-color: var(--color-base-100);
+    color: var(--color-base-content);
 }
 
 h1 {
     font-size: 24px;
 }
 
-.center {
-  display: flex;
-  height: 75vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
     display: flex;
+    padding: 10em;
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .progress-full {
-    height: 24px;
+    height: 28px;
+}
+
+.error {
+    color: #FF746C;
 }

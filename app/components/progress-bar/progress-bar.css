@@ -1,0 +1,32 @@
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.progress-full {
+    height: 32px;
+    margin: auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.ordinal {
+    font-weight: bold;
+}
+
+.center-gap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

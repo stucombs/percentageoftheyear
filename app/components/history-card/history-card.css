@@ -1,0 +1,14 @@
+.history-container {
+    width: auto;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.event-description {
+    font-size: small;
+    color: var(--color-secondary);
+}
