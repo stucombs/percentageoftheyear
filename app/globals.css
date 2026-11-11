@@ -29,12 +29,16 @@ html, body {
 }
 
 h1 {
+    font-size: 32px;
+}
+
+h2 {
     font-size: 24px;
 }
 
 main {
     display: flex;
-    padding: 10em;
+    padding: 6em;
     flex-direction: column;
     gap: 2em;
 }

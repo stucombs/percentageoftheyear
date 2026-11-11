@@ -19,11 +19,11 @@ export function ProgressBar() {
     const completed = (( ordinal / totalDays ) * 100).toFixed(2);
     return (
         <div className="center-gap">
-            <div>{ now ? now : "Loading..." }</div>
+            <h1>{ now ? now : "Loading..." }</h1>
+            <h2>The year is {completed}% complete</h2>
             <progress className="progress progress-primary w-120 progress-full" value={completed}  max="100"></progress>
             <div className="flex-col center">
                 <div><span className="ordinal">{ ordinal }</span> out of <span className="total">{ totalDays }</span> days </div>
-                <div><i>{completed}% Completed</i></div>
             </div>
         </div>
     );
